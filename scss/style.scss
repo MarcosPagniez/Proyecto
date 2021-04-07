@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .body {
     background-repeat: no-repeat;
@@ -40,7 +35,6 @@
 .quienessomos {
     background-image: url(../imagenes/fondo2.png);
     color: blanchedalmond;
-
 }
 
 .h1 {
@@ -69,8 +63,7 @@ margin: auto;
 }
 
 .paragraph-1 {
-    font-size: 18px;
-    margin-right: 50px;
+    font-size: 20px;
 }
 
 .paragraph-2{
@@ -186,6 +179,12 @@ color: blanchedalmond;
     color: blanchedalmond !important;
 }
 
+.card-img-top2{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
 .h3{
     font-family: 'Roboto', sans-serif; 
     font-size: 25px;
@@ -218,73 +217,18 @@ $mapa: (
 .marca1 {
     width: 170px;
     height: 100px;
+    margin: auto;
 }
 
 .marca2 { 
     height: 100px;
+    margin: auto;
 }
 
 .marca3 {
     height: 100px;
     width: 170px;
+    margin: auto;
 }
 
-.auspiciantes {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
 
-.GridContainerPie {
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.gridPie1{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    padding: 30px;
-    padding-left: 60px;
-    font-size: large;
-}
-
-.actividadespie{
-    padding-top: 15px;
-}
-
-.gridPie2{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    padding: 30px;
-    font-size: large;
-    color: white;
-}
-
-.telefonopie {
-    padding-top: 15px;
-
-}
-
-.gridPie3{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-
-.instagram{
-    padding-top: 25px;
-    padding-right: 50px;
-}
-
-.facebook{
-    padding-top: 25px;
-    padding-right: 50px;
-}
-
-.youtube{
-    padding-top: 25px;
-}

@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosPagniez/Proyecto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarcosPagniez/Proyecto/issues"
+  },
+  "homepage": "https://github.com/MarcosPagniez/Proyecto#readme",
   "description": ""
 }
