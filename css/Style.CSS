@@ -1,6 +1,24 @@
 .body {
+  background-color: rgba(0, 0, 0, 0.932);
   background-repeat: no-repeat;
   background-size: auto;
+}
+
+.navbar-brand {
+  transition: all 2s;
+}
+.navbar-brand:hover {
+  transform: scale(1.2);
+}
+
+.nav-items .nav-link {
+  color: chartreuse !important;
+  font-weight: bold;
+}
+.nav-items .nav-link:hover {
+  background: chartreuse;
+  color: black !important;
+  border-radius: 6px;
 }
 
 .titcarousel {
@@ -33,14 +51,15 @@
 }
 
 .quienessomos {
-  background-image: url(../imagenes/fondo2.png);
   color: blanchedalmond;
+  background-image: url(../imagenes/fondo2.png);
 }
 
 .h1 {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   text-align: center;
+  background-color: rgba(153, 205, 50, 0.6);
 }
 
 .paragraph-container {
@@ -74,20 +93,6 @@
   margin-top: 0px;
 }
 
-.p21 {
-  font-size: 18px;
-  margin-left: 30px;
-  margin-right: 60px;
-  line-height: 30px;
-}
-
-.p22 {
-  font-size: 18px;
-  margin-left: 30px;
-  margin-right: 60px;
-  line-height: 30px;
-}
-
 .actividades {
   background-image: url(../imagenes/fondo2.png);
 }
@@ -95,32 +100,68 @@
 .act-container {
   background-color: rgba(153, 205, 50, 0.6);
   color: blanchedalmond;
+  margin-bottom: 30px;
 }
 
-.boton {
+.contenedor-actividad {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.boton:hover {
-  transform: scale(1.2);
-  transition: all 1s;
+.contenedor-actividad figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px chartreuse;
+}
+.contenedor-actividad figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
 }
 
-.VER-MAS {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  font-weight: bolder;
-  margin-bottom: 10px;
-  color: white;
-  background-color: none;
-  border-radius: 2px;
-  border: 2px solid rgba(255, 255, 255, 0.774);
-  padding: 5px;
+.contenedor-actividad figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedor-actividad figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor-actividad figure:hover > .capa h6 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.contenedor-actividad figure .capa h6 {
+  color: blanchedalmond;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 300px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.contenedor-actividad figure .capa ul {
+  color: blanchedalmond;
+  text-align: center;
+  list-style: none;
 }
 
 #PERSONAL {
-  background-image: url(../imagenes/fondo2.png);
   color: blanchedalmond;
+  background-image: url(../imagenes/fondo2.png);
 }
 
 .c.card-img, .card-img-bottom, .card-img-top {
@@ -147,10 +188,6 @@
 .card {
   color: black;
   text-align: center;
-}
-
-.contacto {
-  background-image: url(../imagenes/fondo2.png);
 }
 
 .h2 {
@@ -193,6 +230,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+.boton-formulario:hover {
+  background-color: chartreuse !important;
+  color: black !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .col-sm-12 {
+    margin: auto;
+  }
+}
 .PIE {
   background-color: black;
   text-decoration: white;
@@ -214,6 +261,76 @@
   height: 100px;
   width: 170px;
   margin: auto;
+}
+
+.boton-pie {
+  color: chartreuse;
+  text-decoration: none;
+  font-weight: bold;
+}
+.boton-pie:hover {
+  background-color: chartreuse;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+:root {
+  --instagram: #e4405f;
+  --facebook:#3b5999;
+  --twitter:#55acee;
+  --youtube: #bd081c;
+}
+
+.redes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes-container ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.redes-container ul li a {
+  display: block;
+  padding: 0 10px;
+  background: #333;
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: chartreuse 0 3px 5px 0px;
+  transition: 2s;
+}
+
+.redes-container ul:hover a {
+  filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+  background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover {
+  background: var(--instagram);
+}
+
+.redes-container ul li .twitter:hover {
+  background: var(--twitter);
+}
+
+.redes-container ul li .youtube:hover {
+  background: var(--youtube);
 }
 
 /*# sourceMappingURL=style.css.map */
