@@ -1,8 +1,8 @@
 
+@import "_variables";
+
 .body {
     background-color: rgba(0, 0, 0, 0.932);
-    background-repeat: no-repeat;
-    background-size: auto;
 }
 
 .navbar-brand {
@@ -12,8 +12,8 @@
     }
 }
 .nav-items .nav-link {
-    color: rgb(127, 255, 0) !important; 
-    font-weight: bold;
+    color: $colorheader!important; 
+    font-weight: $fuenteheader;
     &:hover {
         background: chartreuse;
         color: black !important;
@@ -180,14 +180,12 @@ color: blanchedalmond;
     @include cards(black, center)
 }
 
-
-
 .h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 600 !important;
-    color: blanchedalmond;
+    font-family: $fuenteh2;
+    font-size: $fontsizeh2;
+    text-align: $alineacionh2;
+    font-weight: $anchofuenteh2!important;
+    color: $colorh2;
 }
 
 .accordion-button{
@@ -265,9 +263,9 @@ $mapa: (
 }
 
 .boton-pie {
-    color: chartreuse; 
-    text-decoration: none;
-    font-weight: bold;
+    color: $colorpie; 
+    text-decoration: $decoracionpie;
+    font-weight: $fuentpie;
 
     &:hover {
         background-color: chartreuse;
